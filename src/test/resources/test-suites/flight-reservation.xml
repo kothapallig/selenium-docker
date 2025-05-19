@@ -1,0 +1,32 @@
+
+<suite name="Flight Reservation Tests" parallel = "tests" thread-count = "3">
+	<test name="Flight Reservation Tests for one passenger">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="testDataPath" value="test-data/passenger-1.json"></parameter>
+		<classes>
+			<class name="org.seleniumdocker.tests.FlightReservation.FlightReservationTests" />
+		</classes>
+	</test>
+	<test name="Flight Reservation Tests for two passenger">
+	<parameter name="browser" value="firefox"></parameter>
+	<parameter name="testDataPath" value="test-data/passenger-2.json"></parameter>
+		<classes>
+			<class name="org.seleniumdocker.tests.FlightReservation.FlightReservationTests" />
+		</classes>
+	</test>
+	<test name="Flight Reservation Tests for three passenger">
+	<parameter name="browser" value="edge"></parameter>
+	<parameter name="testDataPath" value="test-data/passenger-3.json"></parameter>
+		<classes>
+			<class name="org.seleniumdocker.tests.FlightReservation.FlightReservationTests" />
+		</classes>
+	</test>
+	<test name="Flight Reservation Tests for four passenger">
+	<parameter name="browser" value="chrome"></parameter>
+	<parameter name="testDataPath" value="test-data/passenger-4.json"></parameter>
+		<classes>
+			<class name="org.seleniumdocker.tests.FlightReservation.FlightReservationTests" />
+		</classes>
+	</test>
+
+</suite>
